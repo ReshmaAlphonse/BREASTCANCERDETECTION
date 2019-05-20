@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BreastCancerDetection</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0080ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  color:purple
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #00ffbf;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: teal;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  
+<h2>BREAST CANCER DETECTION</h2>
+</header>
+
+<center><h2>SIMPLE BREAST CANCER DETECTION TEST</h2></center>
+<p>Breast cancer is a serious threat to women’s lives and
+health, and the morbidity and mortality of breast cancer
+are ranked first and second out of all female diseases.
+Early detection of lumps can effectively reduce the mortality
+rate of breast cancer . The mammogram is widely used
+in early screening of breast cancer due to its relatively low
+expense and high sensitivity to minor lesions</p>
+<p>This is a deep learning method for classification
+of normal and abnormal tissues in mammograms .Upload a histopathology image to check if it's Benign or Malignant .</p>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    Select image to upload:
+      <center> <input type="file" name="fileToUpload" id="fileToUpload">
+ <input type="submit" value="Upload Image" name="submit"></center>
+</form>
+<br><br>
+<footer>
+  <p><strong>EARLY DETECTION AND TREATMENT CAN KEEP YOU HEALTHY.</strong></p>
+</footer></br></br>
+<SECTION>
+<marquee><strong>BE  STRONG  AND  LET  YOUR  HEART  TAKE  COURAGE.  YOU  CAN  EITHER  BE  A  VICTIM  OF  CANCER  OR  A  SURVIVOR  OF  CANCER.  IT'S ALL ABOUT YOUR  MINDSET. THAT'S ALL THAT MATTERS .</strong></marquee>
+</SECTION>
+</body> 
+</html>

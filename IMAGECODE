@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+<head> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+ 
+<br><br><br><br><br><br><br><br><br><h1 font-color="red"><center>SKETCH-VERSE</center></h1> 
+<style> 
+body{ 
+background-repeat: no-repeat; 
+background-size: cover; 
+} 
+table{ border: 1px solid black; 
+    outline-style: double; 
+    outline-color: green; 
+height: 150px; 
+width: 500px;} 
+</style> 
+</head> 
+<body background ="ba.jpg"> 
+ 
+<div> 
+<br><br><br><br> 
+<form action="/upload" method="post" enctype="multipart/form-data" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}"> 
+<table align="center" background="bg.jpg"><center> 
+<tr> 
+  <th>Select image to upload:</th>  
+  <th><img id="blah" alt="your image" width="100" height="100" /> 
+ 
+<input type="file"  
+   name="fileToUpload" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])"> </th>  
+</tr> 
+ <tr>  
+    <td> </td>  
+     <td>  <input type="submit" value="Upload Image" name="submit"> </td> 
+ </tr> 
+</center> 
+</table> 
+</form> 
+ 
+</div> 
